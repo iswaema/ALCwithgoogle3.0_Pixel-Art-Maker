@@ -1,6 +1,7 @@
+//Design by Jmuthama - slack handle @_iswaema
 function makeGrid() {
 
-  // Select size input
+  // Select size input declarations
 
   var canvas, cell, Height, Width, rows;
 
@@ -22,7 +23,7 @@ function makeGrid() {
 
   cell = canvas.find('td');
 
-  // When td is clicked by the user, change color of td
+  // When each box is clicked by the user, change color of the box to draw art
   cell.click(function () {
     // Select color input
     var color;
@@ -32,7 +33,7 @@ function makeGrid() {
 
 }
 
-// When size is submitted by the user, call makeGrid()
+// Design grid with user parameters: call makeGrid()
 var submitQuery;
 
 submitQuery = $('input[type="submit"]')
